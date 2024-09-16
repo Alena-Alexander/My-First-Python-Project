@@ -1,0 +1,10 @@
+# Ignore Directory
+
+
+# Ignore Files
+*.scratch
+*.msi
+/**/scp.bash
+/.idea/
+/**/.env
+
