@@ -22,4 +22,3 @@ def getLogger(name: str, level: str = os.getenv("LOG_LEVEL", "DEBUG")):
 # if __name__ == "__main__":
 #     log = getLogger(__name__)
 #     log.debug("Debug message")
-

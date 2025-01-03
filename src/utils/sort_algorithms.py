@@ -61,7 +61,7 @@ def bubble_sort(values: list) -> list:
     # print(values)
     number_of_elements = len(values)
     # Iterate in descending order, from the number_of_elements (last index) to 0, at of step -1
-    for n in np.arange(start=number_of_elements - 1, stop=0, step=-1):    # <== direction
+    for n in np.arange(start=number_of_elements - 1, stop=0, step=-1):  # <== direction
         # print(f"Descending pass index: {n}")
         # Iterate in ascending order, from 0 to n
         for i in np.arange(start=0, stop=n, step=1):  # ==> direction
@@ -219,13 +219,13 @@ def bubble_sort_by_order_of_2(values: list) -> list:
                 # Compare the previous and next value
                 if values[i] > values[i + 2]:
                     # swap elements
-                    previous_value = values[i - 1: i + 1]
-                    next_value = values[i + 1: i + 3]
+                    previous_value = values[i - 1 : i + 1]
+                    next_value = values[i + 1 : i + 3]
                     # print(f"Previous Value: {previous_value}")
                     # print(f"Next value: {next_value}")
                     # assign the swapped values
-                    values[i - 1: i + 1] = next_value
-                    values[i + 1: i + 3] = previous_value
+                    values[i - 1 : i + 1] = next_value
+                    values[i + 1 : i + 3] = previous_value
     print(f"Duration: {time.time() - start_time}")
     return values
 
@@ -237,7 +237,7 @@ def create_nested_list(values: list) -> list:
     # Iterate in descending order, from the number_of_elements (last index) to 0, at of step -1
     for n in np.arange(start=0, stop=number_of_elements, step=2):
         # print(f"iteration: {n}")
-        nested_list.append(values[n: n + 2])
+        nested_list.append(values[n : n + 2])
     # print(f"Duration: {time.time() - start_time}")
     return nested_list
 
@@ -249,7 +249,9 @@ def num_of_identical_scores(sorted_list: list) -> int:
     same_score_count = 1
     arr_length = len(sorted_list) - 2
     for i in range(arr_length):
-        if i % 2 == 1:  # We use the number `2` because it represents how many elements identify a single person data.
+        if (
+            i % 2 == 1
+        ):  # We use the number `2` because it represents how many elements identify a single person data.
             print(f"Index: {i} ==> comparing: {sorted_list[i]} & {sorted_list[i + 2]}")
             if sorted_list[i] == sorted_list[i + 2]:
                 same_score_count += 1

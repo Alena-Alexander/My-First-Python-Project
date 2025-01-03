@@ -21,6 +21,7 @@ class SomeClass:
     """
 
     def some_method(self): ...
+
     """A method is a function of a class.
     This is a method level docstring.
     """

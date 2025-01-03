@@ -108,7 +108,7 @@ log_config = {
         "colored": {
             "()": "colorlog.ColoredFormatter",
             "format": "%(log_color)s[%(asctime)s][%(levelname)s][%(name)s][%(lineno)s]: "
-                      "\n%(message)s",
+            "\n%(message)s",
             "datefmt": "%Y-%m-%d %H:%M:%S",
             "log_colors": log_colors_config,
         },
@@ -166,10 +166,12 @@ os.environ.setdefault("LOG_FILE", LOG_FILE)
 os.environ.setdefault("LOG_LEVEL", LOG_LEVEL)
 os.environ.setdefault("LOG_DIR", LOG_DIR)
 # --------------------------------------------------------------
-print(f"""Loaded Environment Variables: \n{ 
+print(
+    f"""Loaded Environment Variables: \n{ 
 json.dumps( 
     dotenv_values(),
     indent=2,
     sort_keys=True,
-)}""")
+)}"""
+)
 # --------------------------------------------------------------
