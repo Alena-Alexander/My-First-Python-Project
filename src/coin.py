@@ -26,5 +26,9 @@ class Coin:
     # The get sideup method returns the value
     # referenced by sideup
 
-    def get_sideup(self):
+    def get_sideup(self) -> str:
+        """
+        It returns which side is facing up when the coin lands. I.e. heads or tails.
+        :return: str: `Heads or Tails`
+        """
         return self.sideup
