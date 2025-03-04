@@ -9,7 +9,6 @@ def some_function():
     """
     pass
 
-
 class SomeClass:
     """A blueprint of a real life thing.
 

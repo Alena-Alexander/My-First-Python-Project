@@ -9,4 +9,6 @@
 /**/.env
 logs/
 
+/**/.DS_Store
+
 /Notebooks/Fundamentals/.ipynb_checkpoints/
