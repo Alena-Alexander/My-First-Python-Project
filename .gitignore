@@ -7,5 +7,6 @@
 /**/scp.bash
 /.idea/
 /**/.env
+logs/
 
 /Notebooks/Fundamentals/.ipynb_checkpoints/
